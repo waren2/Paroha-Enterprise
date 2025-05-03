@@ -1,0 +1,378 @@
+/*------------default------------------------*/
+nav,header,footer{
+    display: block;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1;
+    color: #222;
+    margin: 0;
+    padding: 0;
+
+}
+div.logo-name{
+    padding: 0;
+    background-color: azure;
+    display: flex;
+
+
+}
+div.logo-name h4{
+    text-align: center;
+    font-size: 16px;
+    margin-left: 70%;
+}
+.paroha{
+    
+
+    font-size: 30px;
+    padding-top: 0;
+    margin: 0;
+    width: 5%;
+    height: 70px;
+    top: 0;
+    right: 0;
+    
+
+}
+.container{
+    width: 100%;
+    margin-top: 0;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+#home{
+    background: linear-gradient(#fff, azure);
+    opacity: 1.25;
+}
+#about{
+    background: linear-gradient(azure,orange);
+}
+#contact{
+    background: linear-gradient( azure,#ffff);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+    
+}
+.col-1{width: 8.50%;}
+.col-2{width: 16.50%;}
+.col-3{width: 33.50%;}
+.col-4{width: 58.50%;}
+.col-5{width: 60.50%;}
+.col-6{width: 50%;}
+.col-7{width: 48;}
+.col-8{width: 75.50%;}
+.col-9{width: 87.50%;}
+.col-10{width: 70.50%;}
+.col-11{width: 81.50%;}
+.col-12{width: 100%;}
+/*----------------custom--------------*/
+.content{
+    margin-left: 30%;
+    margin-top: auto;
+    font-size: 18px;
+    color: red;
+}
+.content p{
+    font-weight: 500;
+    color: #222;
+}
+.img-header{
+    margin-left: 15%;
+    border-radius: 7px;
+}
+.img-header img{
+   
+    border-radius: 8px;
+    width: 70%;
+    box-shadow: 0 0 0 1 rgb(175, 166, 150);
+}
+div.video-iframe{
+    margin-left: 25%;   
+}
+div.video-iframe iframe{
+    border-radius: 7px;
+}
+div.tithe p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.20;
+}
+div.tithe{
+    
+    line-height: 1;
+
+}
+div.header-about{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 30px;
+}
+div.header-about p{
+    text-align: center;
+    font-size: 16px;
+}
+.contact h3{
+    margin-left: 30%;
+    text-transform: uppercase;
+}
+input{
+    margin-left: 30%;
+    padding: 8px;
+    border-radius: 8px;
+    width: 50%;
+    color: #ff004f;
+    font-size: 13px;
+    text-transform: lowercase;
+}
+textarea{
+    width: 50%;
+    padding: 10px;
+    border-radius: 7px;
+    flex-wrap: wrap;
+    margin-left: 15%;
+}
+.text-me h3{
+    
+  text-transform: uppercase;
+  margin-left: 15%;
+
+}
+div.textbox h3{
+    text-transform: uppercase;
+    margin-left: 20%;
+}
+#submit{
+    color: #fff;
+    background-color: darkgreen;
+    opacity: 0.43;
+    width: 30%;
+    margin-top: 25px;
+    text-align: center;
+    display: block;
+    
+}
+#submit:hover{
+    background: green;
+    opacity: 1.2;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+/*--------------nav bar----------*/
+nav{
+    width: 100%;
+ 
+
+}
+nav ul {
+   background-color: grey;
+    overflow: hidden;
+    padding: 15px;
+    padding-left: 10%;
+    margin-top: 0;
+  
+
+
+}
+nav ul li{
+    list-style: none;
+    float: left;
+    text-align: center;
+   
+}
+nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 14px;
+    color: blue;
+}
+div.logo-name{
+    text-align: center;
+    color: orange;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+ul.topnav li a:hover{
+    color: #ff004f;
+    opacity: 0.5;
+
+}
+ul.topnav li.menu{
+    display: none;
+}
+
+/*------------footer------------------*/
+footer{
+     background-color: rgb(175, 166, 150);
+    color: #000;
+    font-weight: 250;
+    font-size: 13px;
+}
+div.footer-content .col-1{
+    margin-left: 12%;
+    margin-top: 0;
+    line-height: 1;
+}
+.col-1 ul li{
+    list-style: none;
+    font-weight: lighter;
+    color: #fff;
+}
+div.footer-content h3{
+    color: red;
+    opacity: 0.5;
+    margin-left: 25%;
+}
+.shopping{
+    font-size: 16px;
+    padding: 40px;
+}
+#moto span{
+    color: #ff004f;
+    opacity: 0.5;
+}
+ ul li.social-links {
+    padding: 14px;
+    float: right;
+    font-size: 20px;
+    list-style: none;
+ }
+
+
+/*------------mobile -----------------*/
+@media  screen and (max-width: 680px){
+    div.logo-name{
+        font-size: 18px;
+        color: orange;
+      
+    }
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.topnav li.menu{
+        display: block;
+        float: right;
+    }
+    ul.topnav.responsive{
+        position: relative;
+    }
+    ul.topnav.responsive li.menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    .col-6,.col-1{
+        display: block;
+        width: 100%;
+
+    }
+    .content{
+        margin: 10px;
+        font-size: 14px;
+        
+    }
+    .content img{
+        width: 800%;
+    
+    }
+    div.video-iframe{
+        margin: 10px;
+   
+    }
+    div.video-iframe iframe{
+        border-radius: 7px;
+        width: 100%;
+    }
+    .contact h3{
+       
+        text-transform: uppercase;
+        font-weight: bolder;
+        margin: 5px;
+       
+    
+    }
+    input{
+        margin: 5px;
+        padding: 8px;
+        border-radius: 8px;
+        width: 350px;
+        color: #000;
+        font-size: 14px;
+        text-transform: lowercase;
+        font-weight: lighter;
+    }
+    button{
+        
+        background-color: green;
+        opacity: 0.8;
+        width: 400px;
+        margin-left: 10%;
+    }
+    button:hover{
+        background-color: green;
+        opacity: 0.7;
+    }
+    div.textbox h3{
+        margin: 5px;
+    }
+    textarea,.text-me h3{
+        margin: 5px;
+
+    }
+    .header-about p{
+        text-align: center;
+        font-size: 14px;
+    }
+    div.footer-content .col-1{
+        margin-left: 30%;
+        line-height: 1.3;
+        font-size: 16px;
+    }
+    div.footer-content h3{
+        margin-left: 10%;
+    }
+    #submit{
+
+        width: 70%;
+    }
+    div.logo-name h4{
+        font-size: 10px;
+    }
+    .paroha{
+        width: 12%;
+        height: 5%;
+        
+        
+    
+    }
+    
+}
